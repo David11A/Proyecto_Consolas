@@ -1,0 +1,1 @@
+C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\ProyectoConsolas.UWP.csproj;x86

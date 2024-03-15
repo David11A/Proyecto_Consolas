@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoConsolas.MainPage">
+
+    <StackLayout>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0">
+                <Label Text="Consolas" FontSize="Title" HorizontalOptions="Center" />
+                <TableView Intent="Form" BackgroundColor="White" HasUnevenRows="true">
+                    <TableRoot>
+                        <TableSection>
+                            <ViewCell>
+                                <Grid BackgroundColor="LightGray">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="Nombre" />
+                                    <Label Grid.Column="1" Text="Fabricante" />
+                                </Grid>
+                            </ViewCell>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Grid.Column="0" Placeholder="Nombre" />
+                                    <Entry Grid.Column="1" Placeholder="Fabricante" />
+                                </Grid>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                    
+                </TableView>
+                <Button Text="Registrar Consolas"  BackgroundColor="Blue" TextColor="White"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1">
+                <Label Text="VideoJuegos" FontSize="Title" HorizontalOptions="Center" />
+                <TableView Intent="Form" BackgroundColor="White" HasUnevenRows="true">
+                    <TableRoot>
+                        <TableSection>
+                            <ViewCell>
+                                <Grid BackgroundColor="LightGray">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="Titulo" />
+                                    <Label Grid.Column="1" Text="Fecha de Lanzamiento" />
+                                </Grid>
+                            </ViewCell>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Grid.Column="0" Placeholder="Titulo" />
+                                    <Entry Grid.Column="1" Placeholder="Fecha de Lanzamiento" />
+                                </Grid>
+                            </ViewCell>
+                            <!-- Agrega más filas según sea necesario -->
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+                <Button Text="Registrar Videojuegos" BackgroundColor="Orange" />
+            </StackLayout>
+
+        </Grid>
+
+        <Label Text="Consolas y Videojuegos" FontSize="Title" HorizontalOptions="Center" />
+        <TableView Intent="Form" BackgroundColor="White" HasUnevenRows="true">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Grid BackgroundColor="LightGray">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="Titulo" />
+                            <Label Grid.Column="1" Text="Fecha de Lanzamiento" />
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </StackLayout>
+
+</ContentPage>
