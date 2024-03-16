@@ -11371,11 +11371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
       "projectName": "ProyectoConsolas.UWP",
-      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
+      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
       "packagesPath": "C:\\Users\\misael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\obj\\",
+      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11397,8 +11397,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
-              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
+            "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
+              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
             }
           }
         }

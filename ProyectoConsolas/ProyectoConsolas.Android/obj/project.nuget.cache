@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QHDD0Oas74aq/kn1PgG3wN/otP6os4v3A9qTZowzr94JfUeruj0vLv8Nx96lSOfq58QJxkfNQEph1n4Ci2NrWg==",
+  "dgSpecHash": "R8xI/cDPeF00Zkzc6RDI/VSLLXzi1zVJfnSRdJFFBqH20tvDtALNlyCvWnFA+PV1CkaFyfOgL3AWnjfN99zIrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+  "projectFilePath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\misael\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\misael\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

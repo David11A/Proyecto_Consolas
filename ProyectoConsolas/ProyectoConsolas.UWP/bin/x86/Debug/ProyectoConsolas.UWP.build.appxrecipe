@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=C5A8C91E-A3A9-4F4D-B3FB-10AEC607E1E5</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.exe">
       <PackagePath>entrypoint\ProyectoConsolas.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -49,7 +49,7 @@
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\xamarin.forms\5.0.0.2196\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.dll">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.dll">
       <PackagePath>ProyectoConsolas.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
@@ -61,124 +61,124 @@
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\xamarin.forms\5.0.0.2196\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.xr.xml">
       <PackagePath>ProyectoConsolas.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\x86\ucrtbased.dll">
@@ -190,10 +190,10 @@
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\ProyectoConsolas.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\ProyectoConsolas.UWP.exe">
       <PackagePath>ProyectoConsolas.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

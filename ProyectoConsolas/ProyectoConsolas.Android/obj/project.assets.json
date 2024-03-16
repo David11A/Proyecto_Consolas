@@ -3414,11 +3414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
       "projectName": "ProyectoConsolas.Android",
-      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
       "packagesPath": "C:\\Users\\misael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
+      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3439,8 +3439,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
-              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
+            "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
+              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
             }
           }
         }

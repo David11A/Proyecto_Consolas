@@ -22,7 +22,7 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Column="0" Text="Nombre" />
+                                    <Label Grid.Column="0" Text="Nombre de la consola" />
                                     <Label Grid.Column="1" Text="Fabricante" />
                                 </Grid>
                             </ViewCell>
@@ -36,11 +36,31 @@
                                     <Entry Grid.Column="1" Placeholder="Fabricante" />
                                 </Grid>
                             </ViewCell>
+                            <ViewCell>
+                                <Grid BackgroundColor="LightGray">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="Enlace de la imagen" />
+                                    <Label Grid.Column="1" Text="Fecha de lanzamiento" />
+                                </Grid>
+                            </ViewCell>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Entry Grid.Column="0" Placeholder="Enlace de la imagen" />
+                                    <DatePicker Grid.Column="1" />
+                                </Grid>
+                            </ViewCell>
+
                         </TableSection>
                     </TableRoot>
-                    
                 </TableView>
-                <Button Text="Registrar Consolas"  BackgroundColor="Blue" TextColor="White"/>
+                <Button Text="Registrar" BackgroundColor="Blue" TextColor="White"/>
             </StackLayout>
 
             <StackLayout Grid.Column="1">
@@ -65,14 +85,14 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <Entry Grid.Column="0" Placeholder="Titulo" />
-                                    <Entry Grid.Column="1" Placeholder="Fecha de Lanzamiento" />
+                                    <DatePicker Grid.Column="1" />
                                 </Grid>
                             </ViewCell>
-                            <!-- Agrega más filas según sea necesario -->
+                       
                         </TableSection>
                     </TableRoot>
                 </TableView>
-                <Button Text="Registrar Videojuegos" BackgroundColor="Orange" />
+                <Button Text="Registrar" BackgroundColor="Orange" />
             </StackLayout>
 
         </Grid>
@@ -91,10 +111,10 @@
                             <Label Grid.Column="1" Text="Fecha de Lanzamiento" />
                         </Grid>
                     </ViewCell>
+         
                 </TableSection>
             </TableRoot>
         </TableView>
-
     </StackLayout>
 
 </ContentPage>

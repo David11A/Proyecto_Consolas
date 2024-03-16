@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=C5A8C91E-A3A9-4F4D-B3FB-10AEC607E1E5</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>53B1F3B6535E9D86B0BC728E6BFBB1BB5AE9EF5BA8D1B623EE547B442168B528</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>DC081B95-EF49-4E26-805A-7CD331409DC8_1.0.0.0_x86__50xeqr8e0zphw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>DC081B95-EF49-4E26-805A-7CD331409DC8_50xeqr8e0zphw!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-15T22:32:14.165</Modified>
+      <Modified>2024-03-16T00:45:15.293</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.exe">
       <PackagePath>entrypoint\ProyectoConsolas.UWP.exe</PackagePath>
-      <Modified>2024-03-15T20:27:49.786</Modified>
+      <Modified>2024-03-16T00:45:07.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -66,9 +66,9 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2021-10-14T09:55:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.dll">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.dll">
       <PackagePath>ProyectoConsolas.dll</PackagePath>
-      <Modified>2024-03-15T22:30:38.240</Modified>
+      <Modified>2024-03-16T00:44:51.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\misael\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -82,156 +82,156 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2021-10-14T09:49:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.437</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.452</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.484</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.494</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.500</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.506</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.512</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.517</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.533</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.539</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.547</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.556</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.567</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.576</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.584</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-03-15T20:16:08.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2024-03-15T20:16:08.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\ProyectoConsolas.UWP.xr.xml">
       <PackagePath>ProyectoConsolas.UWP.xr.xml</PackagePath>
       <Modified>2024-03-15T20:27:49.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-03-15T22:31:16.282</Modified>
+      <Modified>2024-03-16T00:45:07.217</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-03-15T22:31:16.283</Modified>
+      <Modified>2024-03-16T00:45:07.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -245,13 +245,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-10T00:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2024-03-15T20:27:59.124</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\ProyectoConsolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\ProyectoConsolas.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x86\Debug\Core\ProyectoConsolas.UWP.exe">
       <PackagePath>ProyectoConsolas.UWP.exe</PackagePath>
-      <Modified>2024-03-15T22:32:13.996</Modified>
+      <Modified>2024-03-16T00:45:15.277</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

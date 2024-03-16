@@ -547,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
+      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
       "projectName": "ProyectoConsolas",
-      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
+      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
       "packagesPath": "C:\\Users\\misael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\obj\\",
+      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

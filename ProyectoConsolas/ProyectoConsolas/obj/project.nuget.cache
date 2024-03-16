@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0PCt6AJV9rn1fFIyDXK7XgsPuAVptJcnYbsZ3MgGBXIF3WDr3508jUecxcWBbUWzUaB9hZhZGSvvEaPLD7pQfw==",
+  "dgSpecHash": "LY4JfXH/1u5q8WzEVmzvzLsu1YADxYU68j9Eq8Mmsie0fzY6KqE+Of80xD2rrRkVj4RLWXTkBX33vCHi4wPmwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\misael\\Documents\\GIT\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
+  "projectFilePath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\misael\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\misael\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
