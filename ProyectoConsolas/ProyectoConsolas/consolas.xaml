@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoConsolas.consolas"
              Title="Consolas"
-             IconImageSource="iimg1.png">
+             IconImageSource="img1.png">
     <ContentPage.Content>
         <StackLayout Padding="20">
             <!-- Formulario -->
