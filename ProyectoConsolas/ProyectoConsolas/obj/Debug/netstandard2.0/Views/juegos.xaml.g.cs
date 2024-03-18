@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoConsolas.juegos.xaml", "juegos.xaml", typeof(global::ProyectoConsolas.juegos))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoConsolas.Views.juegos.xaml", "Views/juegos.xaml", typeof(global::ProyectoConsolas.juegos))]
 
 namespace ProyectoConsolas {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("juegos.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\juegos.xaml")]
     public partial class juegos : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

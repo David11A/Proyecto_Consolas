@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoConsolas.juegosyconsolas.xaml", "juegosyconsolas.xaml", typeof(global::ProyectoConsolas.juegosyconsolas))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoConsolas.Views.consolas.xaml", "Views/consolas.xaml", typeof(global::ProyectoConsolas.consolas))]
 
 namespace ProyectoConsolas {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("juegosyconsolas.xaml")]
-    public partial class juegosyconsolas : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\consolas.xaml")]
+    public partial class consolas : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(juegosyconsolas));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(consolas));
         }
     }
 }
