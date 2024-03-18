@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoConsolas.consolas"
+             Title="Consolas"
+             IconImageSource="iimg1.png">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Formulario -->
+            <Label Text="CONSOLAS"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20" />
+            <Entry Placeholder="Nombre"
+                   Margin="0,0,0,10" />
+            <Entry Placeholder="Fabricante"
+                   Margin="0,0,0,10" />
+            <Entry Placeholder="Fecha de lanzamiento"
+                   Margin="0,0,0,10" />
+            <Entry Placeholder="Enlace imagen"
+                   Margin="0,0,0,20" />
+            <Button Text="Registrar Consola"     
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Margin="0,0,0,20"/>
+
+            <!-- Tabla -->
+            <StackLayout>
+                <Label Text="Listado de Consolas"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       Margin="0,20,0,10" />
+                <TableView Intent="Settings">
+                    <TableRoot>
+                        <TableSection>
+                            <ViewCell Height="40">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="Nombre"
+                                           FontAttributes="Bold"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="0" />
+                                    <Label Text="Fabricante"
+                                           FontAttributes="Bold"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="1" />
+                                    <Label Text="Fecha de lanzamiento"
+                                           FontAttributes="Bold"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="2" />
+                                    <Label Text="Enlace imagen"
+                                           FontAttributes="Bold"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="3" />
+                                </Grid>
+                            </ViewCell>
+                            <!-- Aquí se agregarán las filas de datos -->
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -636,3 +636,6 @@ C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsola
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\img2.png
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\img3.png
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\img1.png
