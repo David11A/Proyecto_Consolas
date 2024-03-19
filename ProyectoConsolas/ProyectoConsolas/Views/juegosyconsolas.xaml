@@ -8,13 +8,21 @@
 
     <ContentPage.Content>
         <StackLayout Margin="10">
+
+            <Label Text="Juegos para consola"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20" />
+
             <Frame CornerRadius="10"
                    BorderColor="Gray"
                    HasShadow="True"
                    Padding="10"
                    BackgroundColor="White">
+
                 <StackLayout>
-                    
+
+
                     <Label Text="Consola Xbox Series X"
                            FontSize="Title"
                            FontAttributes="Bold"
@@ -37,5 +45,4 @@
             </Frame>
         </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>

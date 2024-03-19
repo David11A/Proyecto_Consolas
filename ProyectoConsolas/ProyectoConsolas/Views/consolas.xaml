@@ -6,7 +6,8 @@
              IconImageSource="img1.png">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <!-- Formulario -->
+            
+            <!-- Formulario de consolas -->
             <Label Text="CONSOLAS"
                    FontSize="Large"
                    HorizontalOptions="Center"
@@ -26,8 +27,15 @@
                     Margin="0,0,0,20"/>
 
             <!-- Tabla -->
+
+            <Picker x:Name="consolaPicker"
+        Title="Seleccionar consola registrada "
+        ItemsSource="{Binding NombresConsolas}">
+            </Picker>
+            
+           
             <StackLayout>
-                <Label Text="Listado de Consolas"
+                <Label Text="Detalle de la consola"
                        FontSize="Medium"
                        HorizontalOptions="Center"
                        Margin="0,20,0,10" />
@@ -64,7 +72,39 @@
                                            Grid.Column="3" />
                                 </Grid>
                             </ViewCell>
-                            <!-- Aquí se agregarán las filas de datos -->
+
+                            
+                            
+                            <!-- fila de datos -->
+
+
+                            <ViewCell Height="40">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="PlayStation 5"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="0" />
+                                    <Label Text="Sony"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="1" />
+                                    <Label Text="2020-11-12"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="2" />
+                                    <Label Text="https://example.com/ps5.jpg"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Grid.Column="3" />
+                                </Grid>
+                            </ViewCell>
+
                         </TableSection>
                     </TableRoot>
                 </TableView>

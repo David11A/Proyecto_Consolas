@@ -61,3 +61,6 @@ C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsola
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637935238560000000.json
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x64\Debug\System.Net.Http.Extensions.dll
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x64\Debug\System.Net.Http.Primitives.dll
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.UWP\bin\x64\Debug\Newtonsoft.Json.dll

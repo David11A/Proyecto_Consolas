@@ -28,9 +28,6 @@ C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsola
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\refint\ProyectoConsolas.dll
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\ProyectoConsolas.pdb
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\ref\ProyectoConsolas.dll
-C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\consolas.xaml.g.cs
-C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\juegos.xaml.g.cs
-C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\juegosyconsolas.xaml.g.cs
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.deps.json
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.dll
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\bin\Debug\netstandard2.0\ProyectoConsolas.pdb
@@ -49,3 +46,6 @@ C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoCons
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\consolas.xaml.g.cs
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\juegos.xaml.g.cs
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\juegosyconsolas.xaml.g.cs
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\consolas.xaml.g.cs
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\juegos.xaml.g.cs
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas\obj\Debug\netstandard2.0\Views\juegosyconsolas.xaml.g.cs

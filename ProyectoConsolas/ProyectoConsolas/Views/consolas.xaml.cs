@@ -15,6 +15,7 @@ namespace ProyectoConsolas
 		public consolas ()
 		{
 			InitializeComponent ();
-		}
-	}
+     
+        }
+    }
 }
