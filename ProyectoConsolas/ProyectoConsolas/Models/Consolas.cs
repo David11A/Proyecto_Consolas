@@ -20,7 +20,7 @@ namespace ProyectoConsolas.Models
         public string href { get; set; }
     }
 
-    public class RootConsolas
+    public class ConsolasResponse
     {
         public List<ItemConsolas> items { get; set; }
         public bool hasMore { get; set; }

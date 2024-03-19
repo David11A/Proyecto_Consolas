@@ -38,7 +38,7 @@ namespace htt.Models
             }
             catch (Exception err)
             {
-                Application.Current.MainPage.DisplayAlert("Error", "Error de Comunicacion", "Ok");
+                Application.Current.MainPage.DisplayAlert("Error", "Error de Comunicacion"+ err, "Ok");
             }
 
             return default(T);

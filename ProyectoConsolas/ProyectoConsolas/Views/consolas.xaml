@@ -5,80 +5,66 @@
              IconImageSource="img1.png">
     <ContentPage.Content>
         <AbsoluteLayout>
-
-            <!-- StackLayout para centrar y extender la tarjeta -->
-            <StackLayout Margin="20"
-                         AbsoluteLayout.LayoutBounds="0,0,1,1"
-                         AbsoluteLayout.LayoutFlags="All">
-
-                <Label Text="Consola"
-                       FontSize="Large"
-                       HorizontalOptions="Center"
-                       Margin="0,0,0,20" />
-
-                <Frame CornerRadius="10"
-                       BorderColor="Gray"
-                       HasShadow="True"
-                       Padding="10"
-                       BackgroundColor="White">
-
-                    <StackLayout>
-
-                        <Label Text="Nombre: "
-                               FontSize="Title"
-                               FontAttributes="Bold"
-                               Margin="0,10,0,5"
-                               TextColor="Black"/>
-                        <Label Text="Fabricante: "
-                               FontSize="Subtitle"
-                               Margin="0,0,0,5"
-                               TextColor="Black"/>
-                        <Label Text="Fecha de lanzamiento:"
-                               FontSize="Subtitle"
-                               Margin="0,0,0,5"
-                               TextColor="Black"/>
-                        <Label Text="Enlace:"
-                               FontSize="Subtitle"
-                               Margin="0,0,0,10"
-                               TextColor="Black"/>
-
-                        <!-- StackLayout horizontal para los botones -->
-                        <StackLayout Orientation="Horizontal"
-                                     HorizontalOptions="CenterAndExpand">
-                            <Button Text="Ver Juegos"
-                                    BackgroundColor="#2196F3"
-                                    TextColor="White"
-                                    CornerRadius="5"
-                                    Margin="0,0,10,0"
-                                    HorizontalOptions="CenterAndExpand"/>
-                            <Button Text="Registrar Juegos"
-                                    BackgroundColor="#FF5733"
-                                    TextColor="White"
-                                    CornerRadius="5"
-                                    HorizontalOptions="CenterAndExpand"/>
-                        </StackLayout>
-
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-
+            <Label > Hola Mundo</Label>
+            <CollectionView ItemsSource="{ Binding listaConsolas}"
+                            AbsoluteLayout.LayoutBounds="0,0,1,1"
+                            AbsoluteLayout.LayoutFlags="All">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="10"
+                               BorderColor="Gray"
+                               HasShadow="True"
+                               Padding="10"
+                               BackgroundColor="White"
+                               >
+                            <StackLayout>
+                                <Label Text="{Binding nombre}"
+                                       FontSize="Title"
+                                       FontAttributes="Bold"
+                                       Margin="0,10,0,5"
+                                       TextColor="Black"/>
+                                <Label Text="{Binding fabricante}"
+                                       FontSize="Subtitle"
+                                       Margin="0,0,0,5"
+                                       TextColor="Black"/>
+                                <Label Text="{Binding fechalanzamiento}"
+                                       FontSize="Subtitle"
+                                       Margin="0,0,0,5"
+                                       TextColor="Black"/>
+                                <Image
+                                    Source="{Binding enlaceimagen}"
+                                    />
+                                <StackLayout Orientation="Horizontal"
+                                    HorizontalOptions="CenterAndExpand">
+                                    <Button Text="Ver Juegos"
+                                       BackgroundColor="#2196F3"
+                                       TextColor="White"
+                                       CornerRadius="5"
+                                       Margin="0,0,10,0"
+                                       HorizontalOptions="CenterAndExpand"/>
+                                    <Button Text="Registrar Juegos"
+                                       BackgroundColor="#FF5733"
+                                       TextColor="White"
+                                       CornerRadius="5"
+                                       HorizontalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             <!-- Botón flotante para agregar -->
-            <Frame CornerRadius="50" 
-                HasShadow="False"
-                   BackgroundColor="#2196F3"
-                   WidthRequest="50"
-                   HeightRequest="50"
-                   Margin="15"
-                   AbsoluteLayout.LayoutBounds="1,1,-1,-1"
-                   AbsoluteLayout.LayoutFlags="PositionProportional">
-
-                <Image Source="agregar.png"
-                       Aspect="AspectFit"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       WidthRequest="30"
-                       HeightRequest="30"/>
-            </Frame>
+            <ImageButton Source="plus.png"
+             BackgroundColor="#2196F3"
+             WidthRequest="50"
+             HeightRequest="50"
+             CornerRadius="25"
+                Margin="15"
+             AbsoluteLayout.LayoutBounds="1,1,-1,-1"
+             AbsoluteLayout.LayoutFlags="PositionProportional"
+             Aspect="AspectFit"
+             HorizontalOptions="Center"
+             VerticalOptions="Center"/>
 
         </AbsoluteLayout>
     </ContentPage.Content>

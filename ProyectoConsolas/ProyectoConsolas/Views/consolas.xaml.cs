@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoConsolas.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,10 @@ namespace ProyectoConsolas
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class consolas : ContentPage
 	{
-		public consolas ()
-		{
-			InitializeComponent ();
-     
+        public consolas()
+        {
+            InitializeComponent();
+            this.BindingContext = new Consolas();
         }
     }
 }

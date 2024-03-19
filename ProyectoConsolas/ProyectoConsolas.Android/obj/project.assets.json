@@ -3677,24 +3677,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\misael\\.nuget\\packages\\": {},
+    "C:\\Users\\DEVSLS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
       "projectName": "ProyectoConsolas.Android",
-      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
-      "packagesPath": "C:\\Users\\misael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
+      "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "packagesPath": "C:\\Users\\DEVSLS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\misael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DEVSLS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3708,8 +3708,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
-              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
+            "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
+              "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
             }
           }
         }
@@ -3721,14 +3721,6 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.0, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
