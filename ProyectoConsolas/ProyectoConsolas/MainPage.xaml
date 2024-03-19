@@ -8,7 +8,6 @@
 
     <local:consolas/>
     <local:juegos/>
-    <local:juegosyconsolas/>
-
+ 
 
 </TabbedPage>

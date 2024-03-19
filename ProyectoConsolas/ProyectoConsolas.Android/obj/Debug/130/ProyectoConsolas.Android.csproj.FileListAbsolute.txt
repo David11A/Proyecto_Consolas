@@ -1290,3 +1290,4 @@ C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsola
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\android\assets\System.Net.Http.Primitives.dll
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\android\assets\System.Net.Primitives.dll
 C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\android\assets\System.Runtime.InteropServices.dll
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\agregar.png
