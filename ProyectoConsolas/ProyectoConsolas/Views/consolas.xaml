@@ -46,6 +46,12 @@
                             TextColor="White"
                             CornerRadius="5"
                             HorizontalOptions="CenterAndExpand"/>
+                                        <!-- Botón de editar -->
+                                        <Button Text="Editar"
+                            BackgroundColor="#FFC107"
+                            TextColor="White"
+                            CornerRadius="5"
+                            HorizontalOptions="CenterAndExpand"/>
                                     </StackLayout>
                                 </StackLayout>
                                 <!-- Imagen X en la esquina superior derecha -->
@@ -55,6 +61,7 @@
                             </AbsoluteLayout>
                         </Frame>
                     </DataTemplate>
+
 
                 </CollectionView.ItemTemplate>
             </CollectionView>
