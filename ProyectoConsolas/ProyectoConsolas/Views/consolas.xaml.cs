@@ -11,8 +11,8 @@ using Xamarin.Forms.Xaml;
 namespace ProyectoConsolas
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class consolas : ContentPage
-	{
+    public partial class consolas : ContentPage
+    {
         public consolas()
         {
             InitializeComponent();
