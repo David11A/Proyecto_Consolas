@@ -1939,3 +1939,6 @@ C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas-EXAMEN\ProyectoConsolas\Proye
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas-EXAMEN\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas-EXAMEN\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\DEVSLS\Documents\GitHub\Proyecto_Consolas-EXAMEN\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\plus.png
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\plus.png
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\eliminar.png
+C:\Users\misael\Documents\GIT\Proyecto_Consolas\ProyectoConsolas\ProyectoConsolas.Android\obj\Debug\130\res\drawable\eliminarx.png
