@@ -2,11 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoConsolas.consolas"
              Title="Consolas"
-             IconImageSource="img1.png">
+             IconImageSource="img1.png"
+             xmlns:vm="clr-namespace:ProyectoConsolas.ViewModels" 
+              x:Name="thisPage">
+
     <ContentPage.Content>
         <AbsoluteLayout>
             <Label > Hola Mundo</Label>
-            <CollectionView ItemsSource="{ Binding listaConsolas}"
+            <CollectionView IsVisible="{Binding !IsModalVisible}" ItemsSource="{ Binding ListaConsolas}"
                             AbsoluteLayout.LayoutBounds="0,0,1,1"
                             AbsoluteLayout.LayoutFlags="All">
                 <CollectionView.ItemTemplate>
@@ -61,12 +64,36 @@
                             </AbsoluteLayout>
                         </Frame>
                     </DataTemplate>
-
-
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+
+            <StackLayout IsVisible="false" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
+                <ScrollView>
+                    <StackLayout Spacing="20">
+                        <Label TextColor="Black" Text="Registrar Consola" FontSize="Large" HorizontalOptions="Center"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre de consola"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Fabricante"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Fecha de lanzamiento"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="URL de la imagen"/>
+                        <Button Text="Registrar" BackgroundColor="#2196F3" TextColor="White"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding IsModalVisible}" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
+                <ScrollView>
+                    <StackLayout Spacing="20">
+                        <Label TextColor="Black" Text="Registrar Consola" FontSize="Large" HorizontalOptions="Center"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre de consola"/>
+                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Fabricante"/>
+                       
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
             <!-- Botón flotante para agregar -->
             <ImageButton Source="plus.png"
+            Clicked="OnAgregarClicked"
              BackgroundColor="#2196F3"
              WidthRequest="50"
              HeightRequest="50"

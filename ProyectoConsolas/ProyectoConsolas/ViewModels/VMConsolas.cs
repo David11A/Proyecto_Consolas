@@ -2,25 +2,46 @@
 using ProyectoConsolas.Models;
 using System.Collections.Generic;
 using System.Text;
-using htt.Models;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
+using System.ComponentModel;
+using Xamarin.Forms;
 
 namespace ProyectoConsolas.ViewModels
 {
-    public class Consolas
+    public class VMConsolas : INotifyPropertyChanged
     {
-        public Consolas() {
-            getConsolas();
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private bool _isModalVisible = false;
+
+        public bool IsModalVisible
+        {
+            get { return _isModalVisible; }
+            set
+            {
+                _isModalVisible = value;
+                OnPropertyChanged(nameof(IsModalVisible)); 
+            }
         }
 
-        private async void getConsolas()
+
+        public ICommand ToggleModalCommand { get; private set; }
+
+        public VMConsolas()
+        {
+            ToggleModalCommand = new Command(ToggleModal); 
+            GetConsolas();
+        }
+
+        private async void GetConsolas()
         {
             string url = "https://apex.oracle.com/pls/apex/juegos/api/examen/consolas";
 
             ConsumoServicios servicios = new ConsumoServicios(url);
 
             var response = await servicios.Get<ConsolasResponse>();
-            foreach(ItemConsolas x in response.items)
+            foreach (ItemConsolas x in response.items)
             {
                 ItemConsolas temp = new ItemConsolas()
                 {
@@ -31,11 +52,20 @@ namespace ProyectoConsolas.ViewModels
                     enlaceimagen = x.enlaceimagen
                 };
 
-                listaConsolas.Add(temp);
+                ListaConsolas.Add(temp);
             }
-
         }
 
-        public ObservableCollection<ItemConsolas> listaConsolas { get; set; } = new ObservableCollection<ItemConsolas>();
+        private void ToggleModal()
+        {
+            IsModalVisible = !IsModalVisible;
+        }
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ObservableCollection<ItemConsolas> ListaConsolas { get; set; } = new ObservableCollection<ItemConsolas>();
     }
 }

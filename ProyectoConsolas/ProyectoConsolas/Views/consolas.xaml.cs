@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -16,7 +15,16 @@ namespace ProyectoConsolas
         public consolas()
         {
             InitializeComponent();
-            this.BindingContext = new Consolas();
+            this.BindingContext = new VMConsolas();
+        }
+
+
+        private void OnAgregarClicked(object sender, EventArgs e)
+        {
+            if (this.BindingContext is VMConsolas viewModel)
+            {
+                viewModel.ToggleModalCommand.Execute(null);
+            }
         }
     }
 }

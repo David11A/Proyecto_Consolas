@@ -12001,26 +12001,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\misael\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\DEVSLS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
       "projectName": "ProyectoConsolas.UWP",
-      "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
-      "packagesPath": "C:\\Users\\misael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\obj\\",
+      "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
+      "packagesPath": "C:\\Users\\DEVSLS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\misael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DEVSLS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12034,8 +12032,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
-              "projectPath": "C:\\Users\\misael\\Documents\\GIT\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
+            "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
+              "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
             }
           }
         }
