@@ -15,16 +15,20 @@ namespace ProyectoConsolas.ViewModels
     {
         public VMConsolas()
         {
+            GetConsolas();
             ToggleListaJuegosCommand = new Command(ToggleJuegos);
             ToggleEditarCommand = new Command(ToggleEditar);
-            FechaLanzamiento = DateTime.Today;
             ToggleModalCommand = new Command(ToggleModal);
-            GetConsolas();
+            ToggleAgregarJuegoCommand = new Command(ToggleAgregarJuego);
+
             RegistrarConsolaCommand = new Command(async () => await RegistrarConsolaAsync());
+            AsignarJuegoCommand = new Command(async () => await )
             ActualizarConsolaCommand = new Command(async () => await ActualizarConsolaAsync());
-            EliminarConsolaCommand = new Command<string>(async (id) => await EliminarConsolaAsync(id));
+            EliminarConsolaCommand = new Command<ItemConsolas>(async (consola) => await EliminarConsolaAsync(consola.consolaid));
             EditarConsolaCommand = new Command<ItemConsolas>(EditarConsola);
             JuegosConsolaCommand = new Command<ItemConsolas>(async (consola) => await GetJuegosConsolas(consola.consolaid));
+            ConsolaSelectedCommand = new Command<ItemConsolas>((consola) => ConsolaSeleccionadaId = consola.consolaid);
+            FechaLanzamiento = DateTime.Today;
         }
 
 
@@ -46,8 +50,10 @@ namespace ProyectoConsolas.ViewModels
         public ICommand ActualizarConsolaCommand { get; private set; }
         public ICommand EditarConsolaCommand { get; private set; }
         public ICommand JuegosConsolaCommand { get; private set; }
-
         public ICommand EliminarConsolaCommand { get; private set; }
+        public ICommand ConsolaSelectedCommand { get; private set; }
+        public ICommand AsignarJuegoCommand { get; private set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
 
@@ -55,14 +61,41 @@ namespace ProyectoConsolas.ViewModels
         private bool _isModalVisible = false;
         private bool _modalEditar = false;
         private bool _listaJuegos = false;
+        private bool _agregarJuego = false;
+        private string _juegoSeleccionado;
+        public string JuegoSeleccionado
+        {
+            get => _juegoSeleccionado;
+            set
+            {
+                _juegoSeleccionado = value;
+                OnPropertyChanged(nameof(JuegoSeleccionado));
+            }
+        }
 
+
+        private int _consolaSeleccionadaId;
+        public int ConsolaSeleccionadaId
+        {
+            get => _consolaSeleccionadaId;
+            set
+            {
+                if (_consolaSeleccionadaId != value)
+                {
+                    _consolaSeleccionadaId = value;
+                    OnPropertyChanged(nameof(ConsolaSeleccionadaId));
+                }
+                ToggleAgregarJuego();
+            }
+
+        }
         public bool IsModalVisible
         {
             get { return _isModalVisible; }
             set
             {
                 _isModalVisible = value;
-                OnPropertyChanged(nameof(IsModalVisible)); 
+                OnPropertyChanged(nameof(IsModalVisible));
             }
         }
 
@@ -95,10 +128,21 @@ namespace ProyectoConsolas.ViewModels
             }
         }
 
+        public bool agregarJuego
+        {
+            get { return _agregarJuego; }
+            set
+            {
+                _agregarJuego = value;
+                OnPropertyChanged(nameof(agregarJuego));
+            }
+        }
+
 
         public ICommand ToggleModalCommand { get; private set; }
         public ICommand ToggleEditarCommand { get; private set; }
-        public ICommand ToggleListaJuegosCommand {  get; private set; }
+        public ICommand ToggleListaJuegosCommand { get; private set; }
+        public ICommand ToggleAgregarJuegoCommand { get; private set; }
 
         private RegistroConsolas _consolaEditada;
         public RegistroConsolas ConsolaEditada
@@ -145,7 +189,6 @@ namespace ProyectoConsolas.ViewModels
 
             var response = await servicios.Get<Response_juego_consola>();
 
-            // Filtrar por consolaid si consolaidFiltro no es null y es diferente de 0
             var juegosFiltrados = consolaidFiltro.HasValue && consolaidFiltro.Value != 0
                 ? response.items.Where(x => x.consolaid == consolaidFiltro.Value)
                 : response.items;
@@ -195,6 +238,18 @@ namespace ProyectoConsolas.ViewModels
             }
         }
 
+        private async Task AsignarConsolaAsync()
+        {
+            string url = "https://apex.oracle.com/pls/apex/juegos/api/examen/consolas/juegos";
+            ConsumoServicios servicios = new ConsumoServicios(url);
+
+            AsignarConsola nuevoRegistro = new AsignarConsola
+            {
+                consolaid = ConsolaSeleccionadaId,
+                videojuegoid = (JuegoSeleccionado)
+            }
+        }
+
 
         private void EditarConsola(ItemConsolas consola)
         {
@@ -207,13 +262,6 @@ namespace ProyectoConsolas.ViewModels
                 enlaceimagen = consola.enlaceimagen,
             };
             FechaLanzamiento = DateTime.Parse(consola.fechalanzamiento);
-            ToggleEditar();
-        }
-
-        private void JuegoConsola(ItemConsolas consola)
-        {
-            ConsolaId = consola.consolaid;
-
             ToggleEditar();
         }
 
@@ -240,20 +288,32 @@ namespace ProyectoConsolas.ViewModels
             }
         }
 
-        private async Task EliminarConsolaAsync(string id)
+        private async Task EliminarConsolaAsync(int id)
         {
-            string url = $"https://apex.oracle.com/pls/apex/juegos/api/examen/consolas?consolaid={id}"; // Asume esta URL para el endpoint de eliminación
-            ConsumoServicios servicios = new ConsumoServicios(url);
+            bool confirmar = await Application.Current.MainPage.DisplayAlert(
+                "Confirmar",
+                "¿Seguro que quieres eliminar este registro?",
+                "OK",
+                "Cancelar" 
+            );
+            if (confirmar)
+            {
+                string url = $"https://apex.oracle.com/pls/apex/juegos/api/examen/consolas?consolaid={id}";
 
-            try
-            {
-                var response = await servicios.DeleteAsync<RegistroConsolas>();
-            }
-            catch (Exception ex)
-            {
-                // Manejar error
+                try
+                {
+                    ConsumoServicios servicios = new ConsumoServicios(url);
+                    var response = await servicios.DeleteAsync<RegistroConsolas>();
+                    await Application.Current.MainPage.DisplayAlert("Éxito", "El registro ha sido eliminado exitosamente.", "OK");
+                    GetConsolas();
+                }
+                catch (Exception ex)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", $"Error al eliminar el registro: {ex.Message}", "OK");
+                }
             }
         }
+
 
 
         private void ToggleModal()
@@ -273,6 +333,15 @@ namespace ProyectoConsolas.ViewModels
             listaJuegos = !listaJuegos;
             listVisible = !listVisible;
         }
+
+        private void ToggleAgregarJuego()
+        {
+            agregarJuego = !agregarJuego;
+            listVisible = !listVisible;
+
+            getJuegos();
+        }
+    
 
 
 
@@ -316,8 +385,32 @@ namespace ProyectoConsolas.ViewModels
             set { _consolaid = value; OnPropertyChanged(nameof(ConsolaId)); }
         }
 
+
+        private async void getJuegos()
+        {
+            listaJuegosParaAgregar.Clear();
+            string url = "https://apex.oracle.com/pls/apex/juegos/api/examen/videojuegos";
+
+            ConsumoServicios servicios = new ConsumoServicios(url);
+
+            var response = await servicios.Get<JuegosResponse>();
+            foreach (ItemJuegos x in response.items)
+            {
+                ItemJuegos temp = new ItemJuegos()
+                {
+                    id = x.id,
+                    titulo = x.titulo,
+                    fechalanzamiento = x.fechalanzamiento
+                };
+
+                listaJuegosParaAgregar.Add(temp);
+            }
+
+        }
+
+        public ObservableCollection<ItemJuegos> listaJuegosParaAgregar { get; set; } = new ObservableCollection<ItemJuegos>();
+
         public ObservableCollection<ItemConsolas> ListaConsolas { get; set; } = new ObservableCollection<ItemConsolas>();
-        public ObservableCollection<Item_juego_consola> ListaJuegosConsolas { get; set; } = new ObservableCollection<Item_juego_consola
-            >();
+        public ObservableCollection<Item_juego_consola> ListaJuegosConsolas { get; set; } = new ObservableCollection<Item_juego_consola>();
     }
 }

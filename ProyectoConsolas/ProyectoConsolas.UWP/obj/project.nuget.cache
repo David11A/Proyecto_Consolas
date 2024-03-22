@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jj1f0UuBCYMn4mAG4dgGGZXnkRMIUmNT8xtcPXedQ1PdfHKzVHdQauWi7lJG9sN6mfDi3hOjmcfmZID4gC6a+g==",
+  "dgSpecHash": "HwBfR1jV5a3D6rhcScXbvt31n3J0q78xLCIp/7ItKKhM23wjZl0zSUlhSvvkh3XoGhvi0VSsZqR+w8RZlzVyYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
+  "projectFilePath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.UWP\\ProyectoConsolas.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEVSLS\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
     "C:\\Users\\DEVSLS\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
@@ -41,7 +41,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.8.1 a 1.7.0. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.UWP -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.UWP -> Xamarin.Essentials (>= 1.7.0)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.8.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.UWP -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.UWP -> Xamarin.Essentials (>= 1.7.0)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "UAP,Version=v10.0.16299",
@@ -58,7 +58,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2622 a 5.0.0.2196. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.UWP -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.UWP -> Xamarin.Forms (>= 5.0.0.2196)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2622 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.UWP -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.UWP -> Xamarin.Forms (>= 5.0.0.2196)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "UAP,Version=v10.0.16299",

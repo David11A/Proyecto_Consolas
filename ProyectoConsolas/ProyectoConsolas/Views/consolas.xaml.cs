@@ -39,12 +39,16 @@ namespace ProyectoConsolas
         {
             if (this.BindingContext is VMConsolas viewModel)
             {
-                viewModel.ToggleListaJuegosCommand.Execute(null);
+                viewModel.ToggleEditarCommand.Execute(null);
             }
         }
-        private async void EliminarConsolaTapped(object sender, EventArgs e)
+
+        private void OnAgregarJuego(object sender, EventArgs e)
         {
-            await DisplayAlert("Eliminar Consola", "¿Estás seguro de que deseas eliminar esta consola?", "Sí", "No");
+            if (this.BindingContext is VMConsolas viewModel)
+            {
+                viewModel.ToggleAgregarJuegoCommand.Execute(null);
+            }
         }
     }
 }
