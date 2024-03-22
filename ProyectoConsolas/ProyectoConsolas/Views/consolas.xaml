@@ -7,81 +7,115 @@
               x:Name="thisPage">
 
     <ContentPage.Content>
-        <AbsoluteLayout>
-            <Label > Hola Mundo</Label>
-            
-            <CollectionView IsVisible="{Binding !IsModalVisible}" ItemsSource="{ Binding ListaConsolas}"
-                            AbsoluteLayout.LayoutBounds="0,0,1,1"
-                            AbsoluteLayout.LayoutFlags="All" >
+        
+        <AbsoluteLayout BackgroundColor="#0E0E10">
+            <!-- Título fijo para Videojuegos -->
+            <Label Text="Título del Juego" 
+               FontSize="Large" 
+               FontAttributes="Bold" 
+               TextColor="#FFFFFF" 
+               Margin="0,20,0,10"
+               AbsoluteLayout.LayoutBounds="0.5,0.05,-1,-1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <CollectionView IsVisible="{Binding !IsModalVisible}" 
+                        ItemsSource="{Binding ListaConsolas}"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All" >
                 <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
 
-
-                <CollectionView.ItemTemplate>
-                    
+                <CollectionView.ItemTemplate >
                     <DataTemplate>
                         <Frame CornerRadius="10"
-                               BorderColor="Gray"
-                               HasShadow="True"
-                               Padding="10"
-                               BackgroundColor="White">
+           BorderColor="#4A4A4E"
+           HasShadow="True"
+           Padding="20"
+           BackgroundColor="#1E1E20">
                             <AbsoluteLayout>
-                                <!-- Contenido de la tarjeta -->
+                              
                                 <StackLayout>
+                                    <Image Source="{Binding enlaceimagen}" 
+                           Aspect="AspectFill"
+                           HeightRequest="160"
+                           HorizontalOptions="FillAndExpand"/>
                                     <Label Text="{Binding nombre}"
-                                           FontSize="Title"
-                                           FontAttributes="Bold"
-                                           TextColor="Black"
-                                           HorizontalTextAlignment="Center"/>
-                                    <Image Source="{Binding enlaceimagen}" Aspect="AspectFit" HeightRequest="160"/>
-                                    <StackLayout Padding="10">
-                                        
-                                        <Label Text="{Binding fabricante}"
-                                               FontSize="Subtitle"
-                                               TextColor="Gray"/>
-                                        <Label Text="{Binding fechalanzamiento}"
-                                               FontSize="Subtitle"
-                                               TextColor="Gray"/>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
-                                        <Button Text="Ver Juegos"
-                                                BackgroundColor="White"
-                                                TextColor="Black"
-                                                BorderColor="#333333"
-                                                BorderWidth="1"
-                                                CornerRadius="10"
-                                                Padding="10"
-                                                HorizontalOptions="CenterAndExpand"/>   
-                                        <Button Text="Registrar Juegos"
-                                                BackgroundColor="White"
-                                                TextColor="Black"
-                                                BorderColor="#333333"
-                                                BorderWidth="1"
-                                                CornerRadius="10"
-                                                Padding="10"
-                                                HorizontalOptions="CenterAndExpand"/>
-                                        <Button Text="Editar"
-                                                BackgroundColor="White"
-                                                TextColor="Black"
-                                                BorderColor="#333333"
-                                                BorderWidth="1"
-                                                CornerRadius="10"
-                                                Padding="10"
-                                                HorizontalOptions="CenterAndExpand"/>
-                                    </StackLayout>
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       TextColor="#FFFFFF"
+                       HorizontalTextAlignment="Center"/>
 
+                                        <StackLayout Padding="10">
+                                            <Label Text="Fabricante:" FontSize="Subtitle" TextColor="#A6A6A6"/>
+                                            <Label Text="{Binding fabricante}" FontSize="Subtitle" TextColor="#FFFFFF"/>
+                                            <Label Text="Fecha de lanzamiento:" FontSize="Subtitle" TextColor="#A6A6A6"/>
+                                            <Label Text="{Binding fechalanzamiento}" FontSize="Subtitle" TextColor="#FFFFFF"/>
+                                        </StackLayout>
+                                    <Grid HorizontalOptions="CenterAndExpand">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Grid.Column="0"
+                                                BackgroundColor="#34495E"
+                                                TextColor="#FFFFFF"
+                                                CornerRadius="5"
+                                                Padding="5"
+                                                HorizontalOptions="Center"
+                                                Text="Ver"/>
+                                        <Image Grid.Column="0"
+                                               Source="plus.png"
+                                               HeightRequest="16"
+                                               WidthRequest="16"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Start" />
+
+                                        <Button Grid.Column="1"
+                                                BackgroundColor="#2ECC71"
+                                                TextColor="#FFFFFF"
+                                                CornerRadius="5"
+                                                Padding="5"
+                                                HorizontalOptions="Center"
+                                                Text="Registrar"/>
+                                        <Image Grid.Column="1"
+                                            Source="plus.png"
+                                               HeightRequest="16"
+                                               WidthRequest="16"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Start" />
+
+                                        <Button Grid.Column="2"
+                                                BackgroundColor="#3498DB"
+                                                TextColor="#FFFFFF"
+                                                CornerRadius="5"
+                                                Padding="5"
+                                                HorizontalOptions="Center"
+                                                Text="Editar"/>
+                                        <Image Grid.Column="2"
+                                           Source="plus.png"
+                                               HeightRequest="16"
+                                               WidthRequest="16"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Start" />
+                                    </Grid>
                                 </StackLayout>
-                                <!-- Imagen X en la esquina superior derecha -->
+                               
                                 <Image Source="eliminarx.png"
-                                       AbsoluteLayout.LayoutBounds="1,0,30,27"
-                                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                   AbsoluteLayout.LayoutBounds="1,0,30,27"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
                             </AbsoluteLayout>
                         </Frame>
                     </DataTemplate>
+
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
+            
 
             <StackLayout IsVisible="{Binding IsModalVisible}" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
                 <ScrollView>
