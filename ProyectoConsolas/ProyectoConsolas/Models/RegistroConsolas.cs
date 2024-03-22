@@ -4,8 +4,10 @@ using System.Text;
 
 namespace ProyectoConsolas.Models
 {
-    class RegistroConsolas
+    public class RegistroConsolas
     {
+        internal int consolaid;
+
         public string nombre { get; set; }
         public string fabricante { get; set; }
         public string fechalanzamiento { get; set; }

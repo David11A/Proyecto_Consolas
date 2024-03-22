@@ -18,7 +18,7 @@
                AbsoluteLayout.LayoutBounds="0.5,0.05,-1,-1"
                AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <CollectionView IsVisible="{Binding !IsModalVisible}" 
+            <CollectionView IsVisible="{Binding listVisible}" 
                         ItemsSource="{Binding ListaConsolas}"
                         AbsoluteLayout.LayoutBounds="0,0,1,1"
                         AbsoluteLayout.LayoutFlags="All" >
@@ -63,12 +63,14 @@
                                         </Grid.ColumnDefinitions>
 
                                         <Button Grid.Column="0"
-                                                BackgroundColor="#34495E"
-                                                TextColor="#FFFFFF"
-                                                CornerRadius="5"
-                                                Padding="5"
-                                                HorizontalOptions="Center"
-                                                Text="Ver"/>
+                                            Command="{Binding Path=BindingContext.JuegosConsolaCommand, Source={x:Reference thisPage}}"
+                                            CommandParameter="{Binding}"
+                                            BackgroundColor="#34495E"
+                                            TextColor="#FFFFFF"
+                                            CornerRadius="5"
+                                            Padding="5"
+                                            HorizontalOptions="Center"
+                                            Text="Ver"/>  
                                         <Image Grid.Column="0"
                                                Source="plus.png"
                                                HeightRequest="16"
@@ -91,12 +93,14 @@
                                                VerticalOptions="Start" />
 
                                         <Button Grid.Column="2"
+                                                Command="{Binding Path=BindingContext.EditarConsolaCommand, Source={x:Reference thisPage}}"
+                                                CommandParameter="{Binding}"
                                                 BackgroundColor="#3498DB"
                                                 TextColor="#FFFFFF"
                                                 CornerRadius="5"
                                                 Padding="5"
                                                 HorizontalOptions="Center"
-                                                Text="Editar"/>
+                                                Text="Editar"/>      
                                         <Image Grid.Column="2"
                                            Source="plus.png"
                                                HeightRequest="16"
@@ -105,46 +109,58 @@
                                                VerticalOptions="Start" />
                                     </Grid>
                                 </StackLayout>
+
+                                <Image Source="eliminarx.png" 
+                                       AbsoluteLayout.LayoutBounds="1,0,30,27"
+                                       AbsoluteLayout.LayoutFlags="PositionProportional">            
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="EliminarConsolaTapped" />
+                                    </Image.GestureRecognizers>
+                                </Image>
                                
-                                <Image Source="eliminarx.png"
-                   AbsoluteLayout.LayoutBounds="1,0,30,27"
-                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
                             </AbsoluteLayout>
                         </Frame>
                     </DataTemplate>
 
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
+
 
             <StackLayout IsVisible="{Binding IsModalVisible}" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
                 <ScrollView>
                     <StackLayout Spacing="20">
                         <Label TextColor="Black" Text="Registrar Consola" FontSize="Large" HorizontalOptions="Center"/>
-                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre de consola"/>
-                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Fabricante"/>
-                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="Fecha de lanzamiento"/>
-                        <Entry TextColor="Black" PlaceholderColor="Gray" Placeholder="URL de la imagen"/>
-                        <Button Text="Registrar" BackgroundColor="#2196F3" TextColor="White"/>
-                    </StackLayout>
-                </ScrollView>
-            </StackLayout>
-            
-            
-            <StackLayout IsVisible="false" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
-                <ScrollView>
-                    <StackLayout Spacing="20">
-                        <Label TextColor="Black" Text="Editar Consola" FontSize="Large" HorizontalOptions="Center"/>
-                        <Entry Text="{Binding ConsolaEditada.Nombre}" Placeholder="Nombre de consola" TextColor="Black"  PlaceholderColor="Gray"/>
-                        <Entry Text="{Binding ConsolaEditada.Fabricante}" Placeholder="Fabricante"  TextColor="Black"   PlaceholderColor="Gray"/>
-                        <Entry Text="{Binding ConsolaEditada.FechaLanzamiento}" Placeholder="Fecha de lanzamiento"   TextColor="Black" PlaceholderColor="Gray"/>
-                        <Entry Text="{Binding ConsolaEditada.EnlaceImagen}" Placeholder="URL de la imagen"  TextColor="Black"  PlaceholderColor="Gray"/>
-                        <Button Text="Actualizar" Command="{Binding ActualizarConsola}"  BackgroundColor="#2196F3" TextColor="White"/>
+                        <Entry Text="{Binding Nombre}" TextColor="Black" PlaceholderColor="Gray" Placeholder="Nombre de consola"/>
+                        <Entry Text="{Binding Fabricante}" TextColor="Black" PlaceholderColor="Gray" Placeholder="Fabricante"/>
+                        <DatePicker Format="D" 
+                            Date="{Binding FechaLanzamiento, Mode=TwoWay}" 
+                            TextColor="Black" 
+                            BackgroundColor="White" />
+                        <Entry Text="{Binding EnlaceImagen}" TextColor="Black" PlaceholderColor="Gray" Placeholder="URL de la imagen"/>
+                        <Button Text="Registrar" Command="{Binding RegistrarConsolaCommand}" BackgroundColor="#2196F3" TextColor="White"/>
+                        <Button Text="Cerrar" Clicked="OnAgregarClicked" BackgroundColor="DarkRed" TextColor="White"/>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
 
-            <StackLayout IsVisible="False" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9"  AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
+            <StackLayout IsVisible="{Binding ModalEditar}" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
+                <ScrollView>
+                    <StackLayout Spacing="20">
+                        <Label TextColor="Black" Text="Editar Consola" FontSize="Large" HorizontalOptions="Center"/>
+                        <Entry Text="{Binding ConsolaEditada.nombre}" Placeholder="Nombre de consola" TextColor="Black"  PlaceholderColor="Gray"/>
+                        <Entry Text="{Binding ConsolaEditada.fabricante}" Placeholder="Fabricante"  TextColor="Black"   PlaceholderColor="Gray"/>
+                        <DatePicker Format="D" 
+                             Date="{Binding ConsolaEditada.fechalanzamiento, Mode=TwoWay}" 
+                             TextColor="Black" 
+                             BackgroundColor="White" />
+                        <Entry Text="{Binding ConsolaEditada.enlaceimagen}" Placeholder="URL de la imagen"  TextColor="Black"  PlaceholderColor="Gray"/>
+                        <Button Text="Actualizar" Command="{Binding ActualizarConsolaCommand}"  BackgroundColor="#2196F3" TextColor="White"/>
+                        <Button Text="Cerrar" Clicked="OnEditar" BackgroundColor="DarkRed" TextColor="White"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding listaJuegos}" AbsoluteLayout.LayoutBounds="0.5,0.5,0.9,0.9"  AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
                 <ScrollView VerticalScrollBarVisibility="Always">
                     <StackLayout Spacing="20">
                         <Label TextColor="Black" Text="Juegos para esta consola" FontSize="Large"  HorizontalOptions="Center"/>
@@ -162,7 +178,7 @@
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-                        <Button Text="Cerrar"   Command="{Binding Cerrarlista}" BackgroundColor="#2196F3" TextColor="White"/>
+                        <Button Text="Cerrar" Clicked="OnListaJuegos" BackgroundColor="#2196F3" TextColor="White"/>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
@@ -197,7 +213,8 @@
                          AbsoluteLayout.LayoutFlags="PositionProportional"
                          Aspect="AspectFit"
                          HorizontalOptions="Center"
-                         VerticalOptions="Center"/> 
+                         VerticalOptions="Center"
+                         IsVisible="{Binding listVisible}"/> 
 
         </AbsoluteLayout>
     </ContentPage.Content>

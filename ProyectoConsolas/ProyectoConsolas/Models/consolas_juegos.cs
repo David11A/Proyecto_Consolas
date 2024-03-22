@@ -5,29 +5,29 @@ using System.Text;
 namespace ProyectoConsolas.Models
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
-    public class ItemConsolas
+    public class Item_juego_consola
     {
+        public int cv_id { get; set; }
         public int consolaid { get; set; }
-        public string nombre { get; set; }
-        public string fabricante { get; set; }
-        public string fechalanzamiento { get; set; }
-        public string enlaceimagen { get; set; }
+        public int videojuegoid { get; set; }
+        public string titulo_consola { get; set; }
+        public string titulo_videojuego { get; set; }
     }
 
-    public class LinkConsolas
+    public class Link_juego_consola
     {
         public string rel { get; set; }
         public string href { get; set; }
     }
 
-    public class ConsolasResponse
+    public class Response_juego_consola
     {
-        public List<ItemConsolas> items { get; set; }
+        public List<Item_juego_consola> items { get; set; }
         public bool hasMore { get; set; }
         public int limit { get; set; }
         public int offset { get; set; }
         public int count { get; set; }
-        public List<LinkConsolas> links { get; set; }
+        public List<Item_juego_consola> links { get; set; }
     }
 
 

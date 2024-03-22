@@ -26,5 +26,25 @@ namespace ProyectoConsolas
                 viewModel.ToggleModalCommand.Execute(null);
             }
         }
+
+        private void OnListaJuegos(object sender, EventArgs e)
+        {
+            if (this.BindingContext is VMConsolas viewModel)
+            {
+                viewModel.ToggleListaJuegosCommand.Execute(null);
+            }
+        }
+
+        private void OnEditar(object sender, EventArgs e)
+        {
+            if (this.BindingContext is VMConsolas viewModel)
+            {
+                viewModel.ToggleListaJuegosCommand.Execute(null);
+            }
+        }
+        private async void EliminarConsolaTapped(object sender, EventArgs e)
+        {
+            await DisplayAlert("Eliminar Consola", "¿Estás seguro de que deseas eliminar esta consola?", "Sí", "No");
+        }
     }
 }
