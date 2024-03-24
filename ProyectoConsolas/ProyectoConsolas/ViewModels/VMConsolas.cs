@@ -24,7 +24,6 @@ namespace ProyectoConsolas.ViewModels
             RegistrarConsolaCommand = new Command(async () => await RegistrarConsolaAsync());
             AsignarJuegoCommand = new Command(async () => await AsignarConsolaAsync());
 
-
             ActualizarConsolaCommand = new Command(async () => await ActualizarConsolaAsync());
             EliminarConsolaCommand = new Command<ItemConsolas>(async (consola) => await EliminarConsolaAsync(consola.consolaid));
             EditarConsolaCommand = new Command<ItemConsolas>(EditarConsola);
@@ -34,19 +33,6 @@ namespace ProyectoConsolas.ViewModels
         }
 
 
-        private DateTime _fechaLanzamiento;
-        public DateTime FechaLanzamiento
-        {
-            get => _fechaLanzamiento;
-            set
-            {
-                if (_fechaLanzamiento != value)
-                {
-                    _fechaLanzamiento = value;
-                    OnPropertyChanged(nameof(FechaLanzamiento));
-                }
-            }
-        }
 
         public ICommand RegistrarConsolaCommand { get; private set; }
         public ICommand ActualizarConsolaCommand { get; private set; }
@@ -294,16 +280,22 @@ namespace ProyectoConsolas.ViewModels
             ConsumoServicios servicios = new ConsumoServicios(url);
             RegistroConsolas consolaActualizada = new RegistroConsolas
             {
-                nombre = Nombre,
-                fabricante = Fabricante,
+                nombre = ConsolaEditada.nombre,
+                fabricante = ConsolaEditada.fabricante,
                 fechalanzamiento = FechaLanzamiento.ToString("yyyy-MM-dd"),
-                enlaceimagen = EnlaceImagen
+                enlaceimagen = ConsolaEditada.enlaceimagen
             };
 
             try
             {
                 var response = await servicios.PutAsync<RegistroConsolas>(consolaActualizada);
                 await Application.Current.MainPage.DisplayAlert("Éxito", "Se actualizo exitosamente.", "OK");
+                GetConsolas();
+                ModalEditar = false;
+                listVisible = true;
+
+
+
             }
             catch (Exception ex)
             {
@@ -376,6 +368,7 @@ namespace ProyectoConsolas.ViewModels
         private string _fabricante;
         private string _enlaceimagen;
         private int _consolaid;
+        private DateTime _fechaLanzamiento;
 
         public string Nombre
         {
@@ -398,6 +391,19 @@ namespace ProyectoConsolas.ViewModels
         {
             get => _consolaid;
             set { _consolaid = value; OnPropertyChanged(nameof(ConsolaId)); }
+        }
+        
+        public DateTime FechaLanzamiento
+        {
+            get => _fechaLanzamiento;
+            set
+            {
+                if (_fechaLanzamiento != value)
+                {
+                    _fechaLanzamiento = value;
+                    OnPropertyChanged(nameof(FechaLanzamiento));
+                }
+            }
         }
 
 

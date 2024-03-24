@@ -9,7 +9,7 @@ namespace ProyectoConsolas.Models
     {
         public int id { get; set; }
         public string titulo { get; set; }
-        public DateTime fechalanzamiento { get; set; }
+        public string fechalanzamiento { get; set; }
     }
 
     public class LinkJuegos

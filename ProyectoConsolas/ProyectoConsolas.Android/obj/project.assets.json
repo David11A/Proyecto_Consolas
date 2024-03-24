@@ -3683,11 +3683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "projectUniqueName": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
       "projectName": "ProyectoConsolas.Android",
-      "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+      "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
       "packagesPath": "C:\\Users\\DEVSLS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
+      "outputPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3708,11 +3708,16 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
-              "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
+            "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj": {
+              "projectPath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas\\ProyectoConsolas.csproj"
             }
           }
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3721,6 +3726,14 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
@@ -3735,7 +3748,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.8.1 a 1.7.0. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.8.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.Android -> Xamarin.Essentials (>= 1.7.0)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v13.0"
@@ -3745,7 +3758,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2622 a 5.0.0.2196. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2622 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.Android -> Xamarin.Forms (>= 5.0.0.2196)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v13.0"

@@ -186,6 +186,7 @@
                         <Label TextColor="Black" Text="Seleccionar juego" FontSize="Large" HorizontalOptions="Center"/>
                         <!-- Picker para seleccionar un juego -->
                         <Picker Title="Elige un juego"
+                        TitleColor="Gray"
                         ItemsSource="{Binding listaJuegosParaAgregar}"
                         SelectedItem="{Binding JuegoSeleccionado}"
                         ItemDisplayBinding="{Binding titulo}"

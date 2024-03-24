@@ -2,6 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoConsolas.juegos"
              Title="Juegos"
+             xmlns:vm="clr-namespace:ProyectoConsolas.ViewModels" 
+             x:Name="thisPage"
              IconImageSource="img2.png">
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="#0E0E10">
@@ -34,9 +36,29 @@
                                 
                                 <BoxView WidthRequest="30" BackgroundColor="Transparent"/>
                                 <StackLayout VerticalOptions="Center" >
-                                    <ImageButton BackgroundColor="Transparent" Source="eliminar.png" WidthRequest="61" HeightRequest="34" VerticalOptions="Start" HorizontalOptions="End" Margin="0,0,11,35" Aspect="AspectFit">
+                                    <ImageButton
+                                        Command="{Binding Path=BindingContext.EliminarJuegoCommand, Source={x:Reference thisPage}}"
+                                        CommandParameter="{Binding}"
+                                        BackgroundColor="Transparent" 
+                                        Source="eliminar.png" 
+                                        WidthRequest="61" 
+                                        HeightRequest="34" 
+                                        VerticalOptions="Start" 
+                                        HorizontalOptions="End" 
+                                        Margin="0,0,11,35" 
+                                        Aspect="AspectFit">
                                     </ImageButton>
-                                    <ImageButton  BackgroundColor="Transparent" Source="editar.png" WidthRequest="61"  HeightRequest="34" VerticalOptions="End"   HorizontalOptions="End"   Margin="0,45,15,0"   Aspect="AspectFit"/>
+                                    <ImageButton  
+                                        Command="{Binding Path=BindingContext.EditarJuegoCommand, Source={x:Reference thisPage}}"
+                                        CommandParameter="{Binding}"
+                                        BackgroundColor="Transparent" 
+                                        Source="editar.png" 
+                                        WidthRequest="61"  
+                                        HeightRequest="34" 
+                                        VerticalOptions="End"   
+                                        HorizontalOptions="End"   
+                                        Margin="0,45,15,0"   
+                                        Aspect="AspectFit"/>
                                 </StackLayout>
                          
                             </StackLayout>
@@ -45,21 +67,20 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <StackLayout IsVisible="False" Margin="20,70,20,20" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="LightGray">
-                <Label Text="Editor"    FontSize="Title" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="Black"/>
-                <Label Text="Título del juego"  TextColor="Black"  FontSize="Medium"/>
-                <Entry Text="{Binding JuegoSeleccionado.Titulo}" TextColor="Black"/>
-                <Label Text="Fecha de lanzamiento"  TextColor="Black"  FontSize="Medium"/>
-                <DatePicker />
+            <StackLayout IsVisible="{Binding IsModalEditarVisible}"  AbsoluteLayout.LayoutBounds=" 0.5,0.5,0.9,0.9" AbsoluteLayout.LayoutFlags="All" BackgroundColor="WhiteSmoke" Padding="20">
+                <ScrollView>
+                    <StackLayout Spacing="20">
+                        <Label TextColor="Black" Text="Editar Juego" FontSize="Large" HorizontalOptions="Center"/>
+                        <Entry Text="{Binding JuegoEditado.titulo}" TextColor="Black"/>
+                        <DatePicker Format="D" 
+                           Date="{Binding JuegoEditado.fechalanzamiento, Mode=TwoWay}" 
+                           TextColor="Black" 
+                           BackgroundColor="White" />
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Button Text="Guardar"  Command="{Binding GuardarCambiosCommand}"  BackgroundColor="White" TextColor="Black" BorderWidth="3"  BorderColor="#2196F3" CornerRadius="20"  Grid.Column="0" Margin="0,0,5,0"/>
-                    <Button Text="Cancelar" Command="{Binding CancelarEdicionCommand}" BackgroundColor="White" TextColor="Black" BorderWidth="3" BorderColor="#FF5733" CornerRadius="20" Grid.Column="1"  Margin="5,0,0,0"/>
-                </Grid>
+                        <Button Text="Actualizar" Command="{Binding ActualizarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
+                        <Button Text="Cerrar" Clicked="CerrarModalEditar" BackgroundColor="DarkRed" TextColor="White"/>
+                    </StackLayout>
+                </ScrollView>
             </StackLayout>
 
 
@@ -67,9 +88,12 @@
                 <ScrollView VerticalScrollBarVisibility="Always">
                     <StackLayout Spacing="20">
                         <Label TextColor="Black" Text="Registrar nuevo juego" FontSize="Large" HorizontalOptions="Center"/>
-                        <Entry  PlaceholderColor="Gray" TextColor="Black"/>
-                        <DatePicker  TextColor="Black" />
-                        <Button Text="Registrar" Command="{Binding AgregarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
+                        <Entry Text="{Binding Titulo}"  PlaceholderColor="Gray" TextColor="Black" Placeholder="Ingrese el titulo del juego"/>
+                        <DatePicker Format="D" 
+                           Date="{Binding FechaLanzamiento, Mode=TwoWay}" 
+                           TextColor="Black" 
+                           BackgroundColor="White" /> 
+                        <Button Text="Registrar" Command="{Binding RegistrarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
                         <Button Text="Cerrar" Clicked="MostrarRegistro" BackgroundColor="DarkRed" TextColor="White"/>
                     </StackLayout>
                 </ScrollView>

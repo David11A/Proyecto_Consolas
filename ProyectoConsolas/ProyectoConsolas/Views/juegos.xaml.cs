@@ -28,6 +28,14 @@ namespace ProyectoConsolas
             }
         }
 
+        private void CerrarModalEditar(object sender, EventArgs e)
+        {
+            if (this.BindingContext is VMJuegos viewModel)
+            {
+                viewModel.ToggleModalEdidarCommand.Execute(null);
+            }
+        }
+
 
     }
 }
