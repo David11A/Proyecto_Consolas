@@ -255,7 +255,7 @@ namespace ProyectoConsolas.ViewModels
             AsignarConsola nuevoRegistro = new AsignarConsola
             {
                 consolaid = ConsolaSeleccionadaId,
-                videojuegoid = JuegoSeleccionado.
+                videojuegoid = JuegoSeleccionado.id
             };
 
             try

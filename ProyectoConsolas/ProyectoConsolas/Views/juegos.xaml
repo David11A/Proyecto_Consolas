@@ -7,6 +7,7 @@
         <AbsoluteLayout BackgroundColor="#0E0E10">
             <Label Text="Lista del Juegos" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" Margin="100,20,0,10"/>
             <CollectionView ItemsSource="{Binding listaJuegos}"
+                            IsVisible="{Binding IsListaJuegosVisible}"
                             Margin="20,70,20,20"
                             AbsoluteLayout.LayoutBounds="0,0,1,1"
                             AbsoluteLayout.LayoutFlags="All">
@@ -59,8 +60,8 @@
                     <Button Text="Cancelar" Command="{Binding CancelarEdicionCommand}" BackgroundColor="White" TextColor="Black" BorderWidth="3" BorderColor="#FF5733" CornerRadius="20" Grid.Column="1"  Margin="5,0,0,0"/>
                 </Grid>
             </StackLayout>
-            
-            <ImageButton Source="plus.png" BackgroundColor="#2196F3" WidthRequest="50"  HeightRequest="50" CornerRadius="25" Margin="15" AbsoluteLayout.LayoutBounds="1,1,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional"  Aspect="AspectFit" HorizontalOptions="Center"  VerticalOptions="Center"/>
+
+            <ImageButton IsVisible="{Binding IsListaJuegosVisible}" Clicked="MostrarRegistro" Source="plus.png" BackgroundColor="#2196F3" WidthRequest="50"  HeightRequest="50" CornerRadius="25" Margin="15" AbsoluteLayout.LayoutBounds="1,1,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional"  Aspect="AspectFit" HorizontalOptions="Center"  VerticalOptions="Center"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
