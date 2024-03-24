@@ -11,6 +11,9 @@
                             Margin="20,70,20,20"
                             AbsoluteLayout.LayoutBounds="0,0,1,1"
                             AbsoluteLayout.LayoutFlags="All">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame CornerRadius="20"
@@ -19,6 +22,7 @@
                                Padding="20"
                                BackgroundColor="LightGray"
                                Margin="0,0,0,20"
+                               
                                VerticalOptions="CenterAndExpand"
                                HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Horizontal">
@@ -28,7 +32,6 @@
                                     <Label Text="{Binding fechalanzamiento}" FontSize="Small" Margin="0,5,0,10" TextColor="Black" HorizontalOptions="Center"/>
                                 </StackLayout>
                                 
-                             
                                 <BoxView WidthRequest="30" BackgroundColor="Transparent"/>
                                 <StackLayout VerticalOptions="Center" >
                                     <ImageButton BackgroundColor="Transparent" Source="eliminar.png" WidthRequest="61" HeightRequest="34" VerticalOptions="Start" HorizontalOptions="End" Margin="0,0,11,35" Aspect="AspectFit">
@@ -64,19 +67,13 @@
                 <ScrollView VerticalScrollBarVisibility="Always">
                     <StackLayout Spacing="20">
                         <Label TextColor="Black" Text="Registrar nuevo juego" FontSize="Large" HorizontalOptions="Center"/>
-                        <Entry Text="{Binding TextoInicial}" TextColor="White"/>
+                        <Entry  PlaceholderColor="Gray" TextColor="Black"/>
                         <DatePicker  TextColor="Black" />
                         <Button Text="Registrar" Command="{Binding AgregarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
                         <Button Text="Cerrar" Clicked="MostrarRegistro" BackgroundColor="DarkRed" TextColor="White"/>
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
-
-
-
-
-
-
+            </StackLayout> 
 
 
             <ImageButton IsVisible="{Binding IsListaJuegosVisible}" Clicked="MostrarRegistro" Source="plus.png" BackgroundColor="#2196F3" WidthRequest="50"  HeightRequest="50" CornerRadius="25" Margin="15" AbsoluteLayout.LayoutBounds="1,1,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional"  Aspect="AspectFit" HorizontalOptions="Center"  VerticalOptions="Center"/>
