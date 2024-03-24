@@ -29,10 +29,10 @@
                 <CollectionView.ItemTemplate >
                     <DataTemplate>
                         <Frame CornerRadius="10"
-           BorderColor="#4A4A4E"
-           HasShadow="True"
-           Padding="20"
-           BackgroundColor="#1E1E20">
+                               BorderColor="#4A4A4E"
+                               HasShadow="True"
+                               Padding="20"
+                               BackgroundColor="#1E1E20">  
                             <AbsoluteLayout>
                               
                                 <StackLayout>
@@ -99,7 +99,7 @@
 
                                 <ImageButton Source="eliminarx.png"
                                        Command="{Binding Path=BindingContext.EliminarConsolaCommand, Source={x:Reference thisPage}}"
-                                        CommandParameter="{Binding}"
+                                       CommandParameter="{Binding}"
                                        AbsoluteLayout.LayoutBounds="1,0,30,27"
                                        AbsoluteLayout.LayoutFlags="PositionProportional">            
                                 </ImageButton>
@@ -190,7 +190,7 @@
                         SelectedItem="{Binding JuegoSeleccionado}"
                         ItemDisplayBinding="{Binding titulo}"
                         TextColor="Black"/>
-                        <Button Text="Registrar" Command="{Binding RegistrarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
+                        <Button Text="Registrar" Command="{Binding AsignarJuegoCommand}" BackgroundColor="#2196F3" TextColor="White"/>
                         <Button Text="Cerrar" Clicked="OnAgregarJuego" BackgroundColor="DarkRed" TextColor="White"/>
                     </StackLayout>
                 </ScrollView>

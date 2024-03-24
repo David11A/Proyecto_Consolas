@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProyectoConsolas.Models
 {
-    public class AsignarConsola
+    public class RegistroVideojuegos
     {
         public string titulo { get; set; }
         public string fechalanzamiento { get; set; }

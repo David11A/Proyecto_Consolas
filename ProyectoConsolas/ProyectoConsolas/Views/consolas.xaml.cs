@@ -50,5 +50,17 @@ namespace ProyectoConsolas
                 viewModel.ToggleAgregarJuegoCommand.Execute(null);
             }
         }
+
+        private void RegistrarJuegoConsola(object sender, EventArgs e)
+        {
+            if (this.BindingContext is VMConsolas viewModel)
+            {
+                viewModel.AsignarJuegoCommand.Execute(null);
+            }
+
+        }
+
+
+      
     }
 }

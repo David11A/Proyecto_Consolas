@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dAUjbWQkHuEnFUa8+YEhk2K1OYGqXF0bEAUQ/bWpoWrptBFaSb8TCmKZA4CPnuHmEPFjwYNGQlG3lh7CX6g+Yg==",
+  "dgSpecHash": "JcxFUZfd4l8WfnM4qyqAmtmCarP5NjTt3LuBtCYyQghkrrtVFhFsHnJkPmTq+cooVWJpAQUQ/I6DjztbxMukOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
+  "projectFilePath": "C:\\Users\\DEVSLS\\Documents\\GitHub\\Proyecto_Consolas-EXAMEN\\ProyectoConsolas\\ProyectoConsolas.Android\\ProyectoConsolas.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DEVSLS\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
     "C:\\Users\\DEVSLS\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
@@ -72,7 +72,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.8.1 to 1.7.0. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.Android -> Xamarin.Essentials (>= 1.7.0)",
+      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.8.1 a 1.7.0. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Essentials (>= 1.8.1) \r\n ProyectoConsolas.Android -> Xamarin.Essentials (>= 1.7.0)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v13.0"
@@ -82,7 +82,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2622 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.Android -> Xamarin.Forms (>= 5.0.0.2196)",
+      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2622 a 5.0.0.2196. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n ProyectoConsolas.Android -> ProyectoConsolas -> Xamarin.Forms (>= 5.0.0.2622) \r\n ProyectoConsolas.Android -> Xamarin.Forms (>= 5.0.0.2196)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v13.0"

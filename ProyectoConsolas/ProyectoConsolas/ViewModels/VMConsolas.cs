@@ -22,7 +22,9 @@ namespace ProyectoConsolas.ViewModels
             ToggleAgregarJuegoCommand = new Command(ToggleAgregarJuego);
 
             RegistrarConsolaCommand = new Command(async () => await RegistrarConsolaAsync());
-            AsignarJuegoCommand = new Command(async () => await )
+            AsignarJuegoCommand = new Command(async () => await AsignarConsolaAsync());
+
+
             ActualizarConsolaCommand = new Command(async () => await ActualizarConsolaAsync());
             EliminarConsolaCommand = new Command<ItemConsolas>(async (consola) => await EliminarConsolaAsync(consola.consolaid));
             EditarConsolaCommand = new Command<ItemConsolas>(EditarConsola);
@@ -62,19 +64,24 @@ namespace ProyectoConsolas.ViewModels
         private bool _modalEditar = false;
         private bool _listaJuegos = false;
         private bool _agregarJuego = false;
-        private string _juegoSeleccionado;
-        public string JuegoSeleccionado
+        private ItemJuegos _juegoSeleccionado;
+
+        public ItemJuegos JuegoSeleccionado
         {
             get => _juegoSeleccionado;
             set
             {
-                _juegoSeleccionado = value;
-                OnPropertyChanged(nameof(JuegoSeleccionado));
+                if (_juegoSeleccionado != value)
+                {
+                    _juegoSeleccionado = value;
+                    OnPropertyChanged(nameof(JuegoSeleccionado));
+                }
             }
         }
 
 
         private int _consolaSeleccionadaId;
+        
         public int ConsolaSeleccionadaId
         {
             get => _consolaSeleccionadaId;
@@ -89,6 +96,8 @@ namespace ProyectoConsolas.ViewModels
             }
 
         }
+
+
         public bool IsModalVisible
         {
             get { return _isModalVisible; }
@@ -240,13 +249,26 @@ namespace ProyectoConsolas.ViewModels
 
         private async Task AsignarConsolaAsync()
         {
-            string url = "https://apex.oracle.com/pls/apex/juegos/api/examen/consolas/juegos";
+            string url = "https://apex.oracle.com/pls/apex/juegos/api/examen/consolas/videojuegos";
             ConsumoServicios servicios = new ConsumoServicios(url);
 
             AsignarConsola nuevoRegistro = new AsignarConsola
             {
                 consolaid = ConsolaSeleccionadaId,
-                videojuegoid = (JuegoSeleccionado)
+                videojuegoid = JuegoSeleccionado.
+            };
+
+            try
+            {
+                var response = await servicios.PostAsync<AsignarConsola>(nuevoRegistro);
+                await Application.Current.MainPage.DisplayAlert("Éxito", "El registro fue exitoso.", "Ok");
+                GetConsolas();
+                agregarJuego = false;
+                listVisible = true;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "Error al registrar : " + ex.Message, "Ok");
             }
         }
 
@@ -281,10 +303,11 @@ namespace ProyectoConsolas.ViewModels
             try
             {
                 var response = await servicios.PutAsync<RegistroConsolas>(consolaActualizada);
+                await Application.Current.MainPage.DisplayAlert("Éxito", "Se actualizo exitosamente.", "OK");
             }
             catch (Exception ex)
             {
-                // Manejar error
+                await Application.Current.MainPage.DisplayAlert("Error", $"Error al actualizar la consola: {ex.Message}", "OK");
             }
         }
 
@@ -343,18 +366,10 @@ namespace ProyectoConsolas.ViewModels
         }
     
 
-
-
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
-
-
-
-
 
 
         private string _nombre;
@@ -407,6 +422,7 @@ namespace ProyectoConsolas.ViewModels
             }
 
         }
+
 
         public ObservableCollection<ItemJuegos> listaJuegosParaAgregar { get; set; } = new ObservableCollection<ItemJuegos>();
 
